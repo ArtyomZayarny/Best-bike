@@ -1,0 +1,47 @@
+.about {
+    background: url('/images/img1.png')no-repeat center;
+    background-size:cover;
+    position: relative;
+    z-index: 1;
+    @include overLayAfter($darkBlue,0.8);
+    .container {
+        max-width: 956px;
+    }
+    &__content {
+        margin-bottom: 35px;
+        padding: 0 15px;
+        .title {
+            text-align: center;
+            h2 {
+                @include text (35px,700,40px,$white);
+                text-transform: uppercase;
+                padding:50px 0;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .about {
+        .container {
+            max-width:100%;
+            padding:0 15px;
+        }
+        &__content {
+            text-align:center;
+        }
+    }
+}
+
+@media(max-width:425px) {
+    .about {
+        .title {
+            h2 {
+                padding:20px 0;
+            }
+        }
+        p{
+            margin-bottom:20px;
+        }
+    }
+}

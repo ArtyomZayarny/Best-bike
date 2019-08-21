@@ -1,0 +1,93 @@
+.call {
+    .container {
+        max-width:956px;
+    }
+    &__content {
+        padding-bottom:40px;
+        .title {
+            text-align: center;
+            h2 {
+                @include text (35px,700,35px,$darkNavy);
+                text-transform: uppercase;
+                padding-bottom: 23px;
+            }
+            p {
+                @include text (16px,400,22px,$darkNavy);
+                padding-bottom: 15px;
+            }
+        }
+        .call-form {
+            .wrap {
+                display: flex;
+                margin: 0 auto;
+                justify-content: center;
+                .field {
+                    padding:7px 0;
+                    @include text (16px,400,24px,$orange);
+                    max-width: 225px;
+                    border-bottom:2px solid $darkNavy;
+                    margin-right:42px;
+                    &::placeholder {
+                        @include text (16px,400,24px,$orange);
+                    }  
+                    &:focus {
+                        border-bottom:2px solid $orange;
+                    } 
+                }
+                input[type="submit"] {
+                    padding: 0 40px;
+                    background-color: $orange;
+                    border:unset;
+                    @include text (16px,400,35px,$white);
+                    text-transform: uppercase;
+                    cursor:pointer;
+                    &:hover {
+                        background-color: darken($orange,10%)
+                    }
+                }
+            }
+        }
+    }
+}
+ 
+@media(max-width:768px) {
+    .call {
+        .container {
+          max-width:100%;
+          padding:0 15px;
+        }
+        .title {
+            h2 {
+                font-size: 30px;
+                padding-bottom: 15px;
+            }
+        }
+        &__content {
+            padding-bottom: 0;
+        }
+        .call-form {
+            .wrap {
+                flex-direction: column;
+                max-width: 70%;
+                .field {
+                    max-width: 100%;
+                    margin-bottom: 20px;
+                    display: block;
+                }
+                .btn-area {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+@media(max-width:575px) {
+    .call {
+        .call-form {
+            .wrap {
+                flex-direction: column;
+                max-width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,125 @@
+.advantages {
+    padding:40px 0;
+    background-color: $darkBlue;
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+        justify-content: center;
+        .title {
+            width:100%;
+            @include text(35px,700,40px,$white);
+            text-transform: uppercase;
+            text-align:center;
+            padding:20px 0;
+            margin-bottom: 50px;
+        }
+        article {
+            width: 48%;
+            margin-right: 20px;
+            margin-bottom:50px;
+            &:nth-child(odd) {
+                margin-right: 0px;
+            }
+            .wrap {
+                display:flex;
+            }
+            .content {
+                padding: 0 15px;
+            }
+            .icon {
+                min-width:70px;
+                height:70px;
+                background-color: $orange;
+                position: relative;
+                margin-right:15px;
+                @include absoluteCenter();
+                &.tools {
+                    @include icon(50px,48px,'/images/tools.png'); 
+                }
+                &.support {
+                   @include icon (44px,50px, '/images/book.png');
+                }
+                &.setup {
+                    @include icon(50px,48px, '/images/support.png');
+                }
+                &.review {
+                    @include icon(50px,50px, '/images/headset.png');
+                }
+
+            }
+            h3 {
+                @include text (22px,500,35px,$white);
+                padding-bottom:10px;
+            }
+            p {
+                @include text(16px,400,26px,$white)
+            }
+        }
+    }
+
+    
+}
+
+@media(max-width:1440px) {
+.advantages {
+    .container {
+        max-width:90%;
+    }
+}
+}
+@media(max-width:1024px) {
+    
+}
+@media(max-width:992px) {
+    .advantages {
+        .container {
+            max-width:100%;
+            padding:0 15px;
+        }
+        .title {
+            font-size: 25px
+        }
+        article {
+            .wrap {
+                flex-direction:column;
+                .content {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+@media(max-width:768px) {
+    .advantages {
+       .title {
+        margin-bottom: 20px;
+       }
+        article {
+            margin-right:0;
+            width:100%;
+            h3 {
+                padding:10px 0;
+            }
+            .icon {
+                margin-right: 0;
+            }
+            &:last-child {
+                margin-bottom:0;
+            }
+        }
+    }
+}
+@media(max-width:575px) {
+    
+}
+@media(max-width:425px) {
+    
+}
+@media(max-width:375px) {
+    .advantages {
+        .title {
+            font-size:19px;
+        }
+    }
+}

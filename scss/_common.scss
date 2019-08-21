@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a,button {
+    transition: all .3s ease;
+}
+a {
+    text-decoration: none;
+    color:#000;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.mobile-nav {
+    display:none;
+}
+img {
+    width:100%;
+    height:auto;
+}
+ul li {
+    list-style: none;
+}
+section {
+    padding: 40px 0;
+}
+p {
+    @include text (18px,400,24px,$white);
+    margin-bottom: 40px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.field {
+    width:100%;
+    outline:none;
+    background-color: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+}
+
+.container {
+    max-width:1200px;
+    margin:0 auto;
+}
+/*Slider dots */
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width:15px;
+    height:15px;
+    background: $orange;
+}
+span.swiper-pagination-bullet {
+    width:10px;
+    height:10px;
+    background: $white;
+    opacity:1;
+}
+/*Dropdown*/
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
+  
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;z-index: 10;}
+  .dropdown:hover .link>.arrow {
+      transform: rotate(0deg)
+  }
+
+  /*Sidebar nav*/
+  /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color:$darkBlue; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    z-index:20;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  /*ACCORDION*/
+.accordion {
+    background-color: transparent;
+    color: $white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    position: relative; }
+    .accordion:after {
+      content: '+';
+      position: absolute;
+      right: 20px;
+      font-size: 18px; }
+  
+  .active, .accordion:hover {
+    background-color: $darkNavy;
+    color:$orange;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .sidenav .panel a {
+    font-size: 14px;
+} 
+  .panel {
+    padding: 0 18px;
+    background-color:$darkBlue;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out; 
+  a {
+    color:$white;
+  }
+  }
+    .burger {
+        display:none;
+    }
+    span.error {
+      display: block;
+      color: red;
+      font-size: 13px;
+  }
+   
