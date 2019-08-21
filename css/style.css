@@ -233,7 +233,7 @@ span.error {
         width: 11px;
         height: 6px;
         display: inline-block;
-        background: url("/images/arrow1.png") no-repeat center;
+        background: url("images/arrow1.png") no-repeat center;
         background-size: cover;
         transform: rotate(-90deg); }
       .header .navigation nav .sub-menu {
@@ -301,7 +301,7 @@ span.error {
   .slider .swiper-slide {
     height: 80vh; }
   .slider .swiper-slide.first {
-    background: url("/images/img.png") no-repeat center;
+    background: url("images/img.png") no-repeat center;
     background-size: cover; }
 
 @media (max-width: 1440px) {
@@ -374,25 +374,25 @@ span.error {
           content: '';
           width: 50px;
           height: 48px;
-          background: url("/images/tools.png") no-repeat center;
+          background: url("images/tools.png") no-repeat center;
           background-size: cover; }
         .advantages__content article .icon.support:after {
           content: '';
           width: 44px;
           height: 50px;
-          background: url("/images/book.png") no-repeat center;
+          background: url("images/book.png") no-repeat center;
           background-size: cover; }
         .advantages__content article .icon.setup:after {
           content: '';
           width: 50px;
           height: 48px;
-          background: url("/images/support.png") no-repeat center;
+          background: url("images/support.png") no-repeat center;
           background-size: cover; }
         .advantages__content article .icon.review:after {
           content: '';
           width: 50px;
           height: 50px;
-          background: url("/images/headset.png") no-repeat center;
+          background: url("images/headset.png") no-repeat center;
           background-size: cover; }
       .advantages__content article h3 {
         font-size: 22px;
@@ -439,7 +439,7 @@ span.error {
     font-size: 19px; } }
 
 .about {
-  background: url("/images/img1.png") no-repeat center;
+  background: url("images/img1.png") no-repeat center;
   background-size: cover;
   position: relative;
   z-index: 1; }
